@@ -108,11 +108,15 @@ nav ul li a:hover {
   box-shadow: 0 0.2px 0 1px gray;
   font-size: 1.05em;
   font-weight: bold;
+  transition: transform 0.1s ease-in;
 }
 
 .hero button:hover {
-  transform: translate(2px);
+  transform: translate(0, -2px);
+  box-shadow: 1.5px 5px 10px 2px #555555
 }
+
+
 
 /* 
 Comincio con i colori
