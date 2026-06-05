@@ -60,7 +60,6 @@ header {
 nav ul {
   display: flex;
   justify-content: space-evenly;
-  gap: 4px;
   color: #555555;
   padding: 0;
   margin: 0 100px auto;
@@ -200,6 +199,11 @@ nav ul li a:hover {
   color: #555555;
   text-align: center;
   margin: 0;
+}
+
+/* ***** FOOTER ***** */
+footer {
+  background-color: black;
 }
 
 /* 
