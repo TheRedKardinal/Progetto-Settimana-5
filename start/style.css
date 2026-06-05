@@ -78,13 +78,13 @@ nav ul li a:hover {
 
 /* ***** HERO ***** */
 .hero {
+  min-height: 70vh;
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #1F7A4D;
-  padding: 30% 0;
   color: white;
 }
 
