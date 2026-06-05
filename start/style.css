@@ -68,7 +68,7 @@ nav ul {
   justify-content: space-evenly;
   color: #555555;
   padding: 0;
-  margin: 0 100px auto;
+  margin: 0 10px; /* Abbassato da 100px per mobile */
 }
 
 nav ul li a {
@@ -95,6 +95,7 @@ nav ul li a:hover {
 
 .hero h1 {
   margin: 0;
+  text-align: center;
 }
 
 .hero p {
@@ -148,13 +149,13 @@ nav ul li a:hover {
 
 /* ***** SERVICES ***** */
 .services {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 1.6em;
   background-color: #FAFAFA;
 }
 
@@ -167,6 +168,7 @@ nav ul li a:hover {
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 94%;
   gap: 25px;
 }
@@ -283,14 +285,13 @@ footer .logo p {
     margin-bottom: 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 100px;
+    justify-content: space-between; /* Spinge gli elementi ai bordi */
+    padding: 0 5%; /* Crea uno spazio dal bordo dello schermo */
   }
 
   header ul {
-    margin-left: 12em;
-    margin-right: 0;
-    gap: 10px;
+    margin: 0;
+    gap: 15px;
   }
 
   .cards-container {
@@ -300,12 +301,13 @@ footer .logo p {
   footer {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 80px;
+    justify-content: space-between; /* Spinge gli elementi ai bordi */
+    padding: 0 5%; /* Crea uno spazio dal bordo dello schermo */
   }
 
   footer .logo {
     align-self: flex-start;
+    margin-top: 0; /* Allinea meglio su riga */
   }
 
   #logo-and-p {
@@ -316,14 +318,23 @@ footer .logo p {
 
 @media screen and (min-width: 1200px) {
 
-.cards-grid {
-width: 80%;
-}
+  /* A 1200px le card prendono il 70% del centro pagina */
+  .cards-grid {
+    width: 70%;
+  }
+
+  /* Per allinearli, diamo a header e footer 15% di padding a sinistra e 15% a destra (15+70+15 = 100%) */
+  header {
+    padding: 0 15%;
+  }
+
+  footer {
+    padding: 0 15%;
+  }
 
 }
 
-/* 
-Comincio con i colori
+/* Comincio con i colori
 Il verde: #1F7A4D
 Il grigio dei caratteri: #555555
 Lo sfondo del contenitore delle card: #FAFAFA
