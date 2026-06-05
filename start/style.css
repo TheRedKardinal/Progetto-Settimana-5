@@ -36,10 +36,9 @@ header {
   display: flex;
   flex-direction: column;
   background-color: white;
-  top: 0%;
+  top: 0;
   position: sticky;
-  top: 0%;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .logo {
@@ -88,7 +87,6 @@ nav ul li a:hover {
   background-color: #1F7A4D;
   color: white;
   transform: entry;
-  position: relative;
 }
 
 .hero h1 {
@@ -111,40 +109,98 @@ nav ul li a:hover {
   box-shadow: 0 0.2px 0 1px gray;
   font-size: 1.05em;
   font-weight: bold;
-  transition: transform 0.1s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero button:hover {
   transform: translate(0, -2px);
-  box-shadow: 1.5px 5px 10px 2px #555555
+  box-shadow: 1.5px 5px 10px 2px #555555;
 }
 
 .entry {
-animation: entry 1s ease-in both;
+  animation: entry 1s ease-in both;
 }
 
 @keyframes entry {
-from {
-  opacity: 0;
-  transform: translate(0, 10px)
-}
-to {
-  opacity: 1;
-  transform: translate(0, -10px);
-}
+  from {
+    opacity: 0;
+    transform: translate(0, 10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, -10px);
+  }
 }
 
 .entry:nth-child(2) {
-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .entry:nth-child(3) {
   animation-delay: 1s;
 }
 
+/* ***** SERVICES ***** */
+.services {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background-color: #FAFAFA;
+}
 
+.services h2 {
+  margin-bottom: 20px;
+  color: #1F7A4D;
+  font-size: 1.5em;
+}
 
+.cards-container {
+  margin: 0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0.2px 0.2px 4px 0.5px lightgrey;
+  border-radius: 10px;
+  width: 94%;
+  min-height: 30%;
+  transition: all 0.2s ease-in;
+}
 
+.cards-container:hover {
+  transform: translate(0, -2px);
+  box-shadow: 1.5px 5px 10px 2px lightgrey;
+}
+
+.cards-container i,
+.cards-container h2,
+.cards-container p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.cards-container i {
+  color: #1F7A4D;
+  font-size: 2.6em;
+}
+
+.cards-container h2 {
+  color: black;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.cards-container p {
+  color: #555555;
+  text-align: center;
+  margin: 0;
+}
 
 /* 
 Comincio con i colori
