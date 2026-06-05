@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -33,6 +37,7 @@ a {
 
 /* ***** HEADER ***** */
 header {
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -93,16 +98,17 @@ nav ul li a:hover {
 }
 
 .hero p {
-  margin: 15px 50px;
+  margin: 25px 50px;
+  margin-top: 10px;
   text-align: center;
   font-size: 1em;
-  font-weight: 250;
+  font-weight: 300;
 }
 
 .hero button {
   color: #1F7A4D;
   background-color: white;
-  padding: 15px;
+  padding: 15px 20px;
   border: 0;
   border-radius: 30px;
   box-shadow: 0 0.2px 0 1px gray;
@@ -203,7 +209,58 @@ nav ul li a:hover {
 
 /* ***** FOOTER ***** */
 footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
+}
+
+footer .logo {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+footer .logo p {
+  font-size: 1em;
+}
+
+.footer-p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-icons button {
+  width: 45px;
+  height: 45px;
+  color: white;
+  background-color: rgb(45, 42, 42);
+  border-radius: 50px;
+  border: 0;
+  transition: all 0.2s ease-in;
+}
+
+.footer-icons button:hover {
+  background-color: #248F59;
+  transform: translate(0, -4px);
+}
+
+.footer-icons button i {
+  font-size: 1.4em;
+}
+
+.copyright {
+  color: #838383;
+  font-size: 0.8em;
 }
 
 /* 
