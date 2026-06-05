@@ -68,7 +68,8 @@ nav ul {
   justify-content: space-evenly;
   color: #555555;
   padding: 0;
-  margin: 0 10px; /* Abbassato da 100px per mobile */
+  margin: 0 10px;
+  /* Abbassato da 100px per mobile */
 }
 
 nav ul li a {
@@ -285,8 +286,10 @@ footer .logo p {
     margin-bottom: 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Spinge gli elementi ai bordi */
-    padding: 0 5%; /* Crea uno spazio dal bordo dello schermo */
+    justify-content: space-between;
+    /* Spinge gli elementi ai bordi */
+    padding: 0 5%;
+    /* Crea uno spazio dal bordo dello schermo */
   }
 
   header ul {
@@ -301,13 +304,16 @@ footer .logo p {
   footer {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Spinge gli elementi ai bordi */
-    padding: 0 5%; /* Crea uno spazio dal bordo dello schermo */
+    justify-content: space-between;
+    /* Spinge gli elementi ai bordi */
+    padding: 0 5%;
+    /* Crea uno spazio dal bordo dello schermo */
   }
 
   footer .logo {
     align-self: flex-start;
-    margin-top: 0; /* Allinea meglio su riga */
+    margin-top: 0;
+    /* Allinea meglio su riga */
   }
 
   #logo-and-p {
@@ -332,6 +338,12 @@ footer .logo p {
     padding: 0 15%;
   }
 
+}
+
+/* ***** CLASSI PER JS ***** */
+.scrolled {
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* Comincio con i colori
