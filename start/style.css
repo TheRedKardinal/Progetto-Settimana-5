@@ -38,6 +38,7 @@ a {
 /* ***** HEADER ***** */
 header {
   min-height: 10vh;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -279,6 +280,7 @@ footer .logo p {
 @media screen and (min-width: 768px) {
 
   header {
+    margin-bottom: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -309,6 +311,14 @@ footer .logo p {
   #logo-and-p {
     align-items: flex-start;
   }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.cards-grid {
+width: 80%;
+}
 
 }
 
