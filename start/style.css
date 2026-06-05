@@ -83,7 +83,6 @@ nav ul li a:hover {
 /* ***** HERO ***** */
 .hero {
   min-height: 70vh;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +148,7 @@ nav ul li a:hover {
 /* ***** SERVICES ***** */
 .services {
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,7 +160,14 @@ nav ul li a:hover {
 .services h2 {
   margin-bottom: 20px;
   color: #1F7A4D;
-  font-size: 1.5em;
+  font-size: 1.9em;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  gap: 25px;
 }
 
 .cards-container {
@@ -173,7 +180,7 @@ nav ul li a:hover {
   background-color: white;
   box-shadow: 0.2px 0.2px 4px 0.5px lightgrey;
   border-radius: 10px;
-  width: 94%;
+  width: 100%;
   min-height: 30%;
   transition: all 0.2s ease-in;
 }
@@ -214,6 +221,11 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: black;
+}
+
+#logo-and-p {
+  display: flex;
+  flex-direction: column;
 }
 
 footer .logo {
@@ -261,6 +273,43 @@ footer .logo p {
 .copyright {
   color: #838383;
   font-size: 0.8em;
+}
+
+/* ***** 768 PX ***** */
+@media screen and (min-width: 768px) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+  }
+
+  header ul {
+    margin-left: 12em;
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  .cards-container {
+    flex: 1 1 260px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+  }
+
+  footer .logo {
+    align-self: flex-start;
+  }
+
+  #logo-and-p {
+    align-items: flex-start;
+  }
+
 }
 
 /* 
