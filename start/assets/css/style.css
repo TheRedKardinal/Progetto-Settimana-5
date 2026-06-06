@@ -317,7 +317,7 @@ nav ul li a:hover {
 
 .team-container {
   margin: 0;
-  padding: 20px 35px;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,7 +325,7 @@ nav ul li a:hover {
   background-color: white;
   box-shadow: 0.2px 0.2px 4px 0.5px lightgrey;
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
   min-height: 30%;
   transition: all 0.2s ease-in;
 }
@@ -335,6 +335,19 @@ nav ul li a:hover {
   font-size: 1.4em;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.team-img {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+
+.team-img i {
+  color: #1F7A4D;
+  font-size: 2.6em;
 }
 
 .team-container img {
