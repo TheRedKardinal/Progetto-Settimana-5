@@ -45,6 +45,7 @@ header {
   top: 0;
   position: sticky;
   z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo {
@@ -56,6 +57,7 @@ header {
   font-size: 1.5rem;
   color: #1F7A4D;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo p {
@@ -341,10 +343,28 @@ footer .logo p {
 }
 
 /* ***** CLASSI PER JS ***** */
-.scrolled {
+header.scrolled {
   background-color: black;
-  transition: background-color 0.3s ease-in-out;
+  min-height: 7vh;
+  height: 7vh;
+  margin-bottom: 10px; 
 }
+
+header.scrolled .logo {
+  margin: 0;
+  font-size: 1em;
+}
+
+header.scrolled .logo p {
+  margin: 0;
+  font-size: 1em;
+}
+
+header.scrolled nav ul li {
+  margin: 0;
+  font-size: 0.8em;
+}
+
 
 /* Comincio con i colori
 Il verde: #1F7A4D
