@@ -37,7 +37,7 @@ a {
 
 /* ***** HEADER ***** */
 header {
-  min-height: 10vh;
+  min-height: 8vh;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
