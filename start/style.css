@@ -150,6 +150,74 @@ nav ul li a:hover {
   animation-delay: 1s;
 }
 
+/* ***** WORKS ***** */
+.works {
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6em;
+  background-color: #FAFAFA;
+}
+
+.works h2 {
+  margin-bottom: 20px;
+  color: #1F7A4D;
+  font-size: 1.9em;
+}
+
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 94%;
+  gap: 25px;
+}
+
+.work-container {
+  margin: 0;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0.2px 0.2px 4px 0.5px lightgrey;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 30%;
+  transition: all 0.2s ease-in;
+}
+
+.work-container h2 {
+  color: black;
+  font-size: 1.4em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.work-container img {
+  margin-bottom: 20px;
+  height: 300px;
+  text-align: center;
+  object-fit: cover;
+  border: 1px solid #1F7A4D;
+  border-radius: 10px;
+}
+
+.work-container p {
+  margin: 0;
+  color: #555555;
+  text-align: center;
+}
+
+.work-container:hover {
+  transform: translate(0, -2px);
+  box-shadow: 1.5px 5px 10px 2px lightgrey;
+}
+
 /* ***** SERVICES ***** */
 .services {
   padding-top: 3.1em;
@@ -299,6 +367,10 @@ footer .logo p {
     gap: 15px;
   }
 
+  .work-container {
+    flex: 1 1 320px;
+  }
+
   .cards-container {
     flex: 1 1 260px;
   }
@@ -327,6 +399,10 @@ footer .logo p {
 @media screen and (min-width: 1200px) {
 
   /* A 1200px le card prendono il 70% del centro pagina */
+  .works-grid {
+    width: 70%;
+  }
+
   .cards-grid {
     width: 70%;
   }
@@ -347,7 +423,7 @@ header.scrolled {
   background-color: black;
   min-height: 7vh;
   height: 7vh;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 header.scrolled .logo {
