@@ -289,6 +289,31 @@ nav ul li a:hover {
   margin: 0;
 }
 
+@keyframes entry-services {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(10px, 0);
+  }
+}
+
+.entry-services:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.entry-services:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.entry-services {
+  animation: entry 1s ease-in both;
+}
+
+
 /* ***** TEAM ***** */
 .team {
   padding-top: 3.1em;
@@ -339,10 +364,11 @@ nav ul li a:hover {
 
 .team-img {
   margin: 0;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2.5em;
+  justify-content: center;
+  gap: 20px;
 }
 
 .team-img i {
@@ -351,7 +377,6 @@ nav ul li a:hover {
 }
 
 .team-container img {
-  margin-bottom: 20px;
   height: 300px;
   text-align: center;
   object-fit: fill;
@@ -370,7 +395,6 @@ nav ul li a:hover {
   transform: translate(0, -2px);
   box-shadow: 1.5px 5px 10px 2px lightgrey;
 }
-
 
 /* ***** FOOTER ***** */
 footer {
@@ -458,6 +482,10 @@ footer .logo p {
     flex: 1 1 260px;
   }
 
+  .team-container {
+    flex: 1 1 350px;
+  }
+
   footer {
     flex-direction: row;
     align-items: center;
@@ -487,6 +515,10 @@ footer .logo p {
   }
 
   .cards-grid {
+    width: 70%;
+  }
+
+  .team-grid {
     width: 70%;
   }
 
