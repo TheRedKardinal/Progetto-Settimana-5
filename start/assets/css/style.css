@@ -203,6 +203,7 @@ nav ul li a:hover {
   height: 300px;
   text-align: center;
   object-fit: cover;
+  object-position: center;
   border: 1px solid #1F7A4D;
   border-radius: 10px;
 }
@@ -288,6 +289,76 @@ nav ul li a:hover {
   margin: 0;
 }
 
+/* ***** TEAM ***** */
+.team {
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6em;
+  background-color: #FAFAFA;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+  color: #1F7A4D;
+  font-size: 1.9em;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 94%;
+  gap: 25px;
+}
+
+.team-container {
+  margin: 0;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0.2px 0.2px 4px 0.5px lightgrey;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 30%;
+  transition: all 0.2s ease-in;
+}
+
+.team-container h2 {
+  color: black;
+  font-size: 1.4em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.team-container img {
+  margin-bottom: 20px;
+  height: 300px;
+  text-align: center;
+  object-fit: fill;
+  object-position: center;
+  border: 1px solid #1F7A4D;
+  border-radius: 50px;
+}
+
+.team-container p {
+  margin: 0;
+  color: #555555;
+  text-align: center;
+}
+
+.team-container:hover {
+  transform: translate(0, -2px);
+  box-shadow: 1.5px 5px 10px 2px lightgrey;
+}
+
+
 /* ***** FOOTER ***** */
 footer {
   min-height: 10vh;
@@ -298,14 +369,14 @@ footer {
 }
 
 #logo-and-p {
+  margin: 1.8em 0;
   display: flex;
   flex-direction: column;
 }
 
 footer .logo {
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 1.3em;
 }
 
@@ -315,7 +386,6 @@ footer .logo p {
 
 .footer-p {
   margin: 0;
-  margin-bottom: 20px;
   color: #555555;
 }
 
